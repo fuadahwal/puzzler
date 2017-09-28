@@ -1,0 +1,230 @@
+.Xword {
+  text-align: center;
+}
+
+.xwordjs-vertical-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.xwordjs-container {
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.xwordjs-grid {
+  flex-flow: row wrap;
+  display: inline;
+  margin: 10px;
+}
+
+.xwordjs-grid-row {
+  display: flex;
+}
+
+.xwordjs-cell-top {
+  border-top-style: solid;
+}
+
+.xwordjs-cell-left {
+  border-left-style: solid;
+}
+
+.xwordjs-cell {
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  width: 4vh;
+  height: 4vh;
+  user-select: none;
+}
+
+.xwordjs-cell-circled {
+  border-width: 1px;
+  border-style: solid;
+  width: 3.9vh;
+  height: 3.9vh;
+  border-radius: 50%;
+}
+
+.xwordjs-cell-number {
+  height: 3px;
+  padding-left: 1px;
+  text-align: left;
+  font-size: 0.7em;
+}
+
+.xwordjs-cell-text {
+  text-align: center;
+  line-height: 4vh;
+  vertical-align: middle;
+}
+
+.xwordjs-cell-black {
+  background-color: #707070;
+}
+
+.xwordjs-cell-active {
+  background-color: #00ff00;
+}
+
+.xwordjs-cell-focus {
+  background-color: #a0ffa0;
+}
+
+.xwordjs-cell-incorrect {
+  background-color: #ffd335;
+}
+
+.xwordjs-cell-active-incorrect {
+  background-color: #ffe68c;
+}
+
+.xwordjs-cell-focus-incorrect {
+  background-color: #ffeeb2;
+}
+
+.xwordjs-cluelist-container {
+  display: flex;
+  height: 550px;
+  border: 1px;
+  border-style: solid;
+  margin: 10px;
+}
+
+.xwordjs-cluelist-container h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.xwordjs-cluelist {
+  height: 100%;
+  width: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.xwordjs-clue-active {
+  background-color: #00ff00
+}
+
+.xwordjs-clue-cross-active {
+  background-color: #7fb77f
+}
+
+.xwordjs-clue-bar {
+  background-color: #7fb77f;
+  height: 40px;
+}
+
+.xwordjs-topbar {
+  display: flex;
+  width: 100%;
+}
+
+.xwordjs-timer-bar {
+  display: flex;
+  user-select: none;
+}
+
+.xwordjs-timer-bar {
+  display: flex;
+  user-select: none;
+}
+
+.xwordjs-timer-text {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.xwordjs-timer-pause {
+  background: #7fb77f;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.xwordjs-keyboard-key {
+  height: 10vw;
+  width: 10vw;
+  line-height: 10vw;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.xwordjs-keyboard-row {
+  display: flex;
+  justify-content: center;
+}
+
+.xwordjs-keyboard {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #7fb77f;
+}
+
+.xwordjs-title {
+  margin: 1em 1em 1em 1em;
+}
+
+.xwordjs-title-text {
+  font-size: 1.5em;
+}
+
+.xwordjs-author-text {
+  font-size: 1.25em;
+}
+
+.xwordjs-text-box {
+  padding: 10px;
+  width: 50vw;
+}
+
+/* mobile settings */
+@media screen and (max-width:600px) {
+  .xwordjs-cluelist-container {
+    display: none;
+  }
+  .xwordjs-cluelist {
+    display: none;
+  }
+  .xwordjs-cell {
+    width: 21px;
+    height: 21px;
+  }
+  .xwordjs-cell-circled {
+    width: 20px;
+    height: 20px;
+  }
+ .xwordjs-cell-text {
+    line-height: 21px;
+  }
+  .xwordjs-cell-number {
+    font-size: 0.5em;
+  }
+  .xwordjs-title-text {
+    font-size: 1em;
+  }
+  .xwordjs-author-text {
+    font-size: 1em;
+  }
+}
+
+
+@media screen and (min-width:600px) {
+  .xwordjs-keyboard {
+    display: none;
+  }
+  .xwordjs-clue-bar {
+    display: none;
+  }
+}
